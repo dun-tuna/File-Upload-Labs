@@ -1,0 +1,9 @@
+version: "3.6"
+services:
+  upload-file-level-001:
+    build: . 
+    restart: unless-stopped
+    ports:
+      - "8010:80"
+    volumes:
+      - /var/www/html/upload
