@@ -45,11 +45,9 @@ if (isset($_FILES["file"])) {
     <br />
     <h3 class="display-4 text-center">File upload workshop</h3>
     <h4 class="display-4 text-center">Level 1</h4>
-    <p class="display-5 text-center">Goal: RCE me!</p>
 
     <br />
     <div class="container">
-        <a href="/?debug">Debug source</a>
         <form method="post" enctype="multipart/form-data">
             Select file to upload:
             <input type="file" name="file" id="file">

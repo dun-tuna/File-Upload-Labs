@@ -47,7 +47,7 @@ if (isset($_FILES["file"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>File upload Level 1</title>
+    <title>File upload Level 2</title>
 
     <!-- This is for UI only -->
     <!-- Bootstrap CSS -->
@@ -59,12 +59,10 @@ if (isset($_FILES["file"])) {
     <br />
     <br />
     <h3 class="display-4 text-center">File upload workshop</h3>
-    <h4 class="display-4 text-center">Level 1</h4>
-    <p class="display-5 text-center">Goal: RCE me!</p>
+    <h4 class="display-4 text-center">Level 2</h4>
 
     <br />
     <div class="container">
-        <a href="/?debug">Debug source</a>
         <form method="post" enctype="multipart/form-data">
             Select file to upload:
             <input type="file" name="file" id="file">
