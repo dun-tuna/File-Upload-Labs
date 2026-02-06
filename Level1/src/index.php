@@ -10,7 +10,6 @@ $dir = $_SESSION['dir'];
 if (!file_exists($dir))
     mkdir($dir);
 
-if (isset($_GET["debug"])) die(highlight_file(__FILE__));
 if (isset($_FILES["file"])) {
     $error = '';
     $success = '';
