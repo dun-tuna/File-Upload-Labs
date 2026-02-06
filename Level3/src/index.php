@@ -22,7 +22,7 @@ if (isset($_FILES["file"])) {
         if (in_array($ext, $blacklist)) {
             die("Hack detected");
         }
-        $allow_types = ['image/jpeg', 'image/jpg', 'image/png', 'image/gif', 'text/plain'];
+        $allow_types = ['image/jpeg', 'image/jpg', 'image/png', 'image/gif', 'text/plain', 'application/octet-stream'];
         if(!in_array($_FILES["file"]["type"], $allow_types)){
             die("File type not allowed");
         }
@@ -48,7 +48,7 @@ if (isset($_FILES["file"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>File upload Level 2</title>
+    <title>File upload Level 3</title>
 
     <!-- This is for UI only -->
     <!-- Bootstrap CSS -->
@@ -60,7 +60,7 @@ if (isset($_FILES["file"])) {
     <br />
     <br />
     <h3 class="display-4 text-center">File upload workshop</h3>
-    <h4 class="display-4 text-center">Level 2</h4>
+    <h4 class="display-4 text-center">Level 3</h4>
 
     <br />
     <div class="container">
